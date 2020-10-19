@@ -9,6 +9,21 @@
         {% endif %}
     </head>
     <body>
+        <h3> Business News</h3>
+        <ul>
+            {{ macro.displayNewsList(business)}}
+        </ul>
+
+        <h4> General News </h4>
+        <ul>
+            {{ macro.displayNewsList(general)}}
+        </ul>
+        <h4>Entertainment News</h4>
+        <ul>
+            {{ macro.displayNewsList(entertainment_list)}}
+        </ul>
+
+
 
     </body>
 </html>
