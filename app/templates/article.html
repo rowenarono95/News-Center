@@ -13,18 +13,16 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="card-columns">
             {% for article in article %}
-            <div class="col-md-3">
-                <div class="card" style="width: 20rem;">
-
-                    <img src="{{article.urlToImage}}" width="500px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{article.publishedAt}}</h5>
-                        <p class="card-text">{{article.description|truncate(100)}}.</p>
-                        <a href="{{article.url}}" class="btn btn-primary">Read More</a>
-                    </div>
+            <div class="card">
+                <p>{{news.url}}">{{ news.name}}</p>
+                <div class="card-body">
+                    <p>{{news.description}}</p>
+                    <p><br><a href="/sources/{{news.id}}">{{ View Article}}</a></p>
                 </div>
+            </div>
+            {% endfor %}
             </div>
             {% endfor %}
         </div>
@@ -44,3 +42,16 @@
         </div>
         {% endfor %}
     </div> -->
+<!-- 
+    <div class="row">
+        {% for article in article %}
+        <div class="col-md-3">
+            <div class="card" style="width: 20rem;">
+
+                <img src="{{article.urlToImage}}" width="500px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{article.publishedAt}}</h5>
+                    <p class="card-text">{{article.description|truncate(100)}}.</p>
+                    <a href="{{article.url}}" class="btn btn-primary">Read More</a>
+                </div>
+            </div> -->
