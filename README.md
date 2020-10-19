@@ -27,3 +27,4 @@ This an application that provides users with the most current news around includ
 Incase of an error you can me through my email <rowenarono@gmail.com>
 
 ### LICENSE
+* [[License: MIT]](Licence.md)
