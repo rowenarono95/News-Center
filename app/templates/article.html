@@ -11,14 +11,23 @@
 </head>
 
 <body>
-    {% for article in article %}
-    <li> {{article.description|truncate(100)}}</li>
-    <li>{{article.publishedAt}}</li>
-    <img src="{{article.urlToImage}}" alt="">
-    <li>{{article.url}}</li>
+    <div class="container">
+        <div class="row">
+            {% for article in article %}
+            <div class="col-md-3">
+                <div class="card" style="width: 20rem;">
 
-    {% endfor %}
-
+                    <img src="{{article.urlToImage}}" width="400px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{article.publishedAt}}</h5>
+                        <p class="card-text">{{article.description|truncate(100)}}.</p>
+                        <a href="{{article.url}}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 
 </html>

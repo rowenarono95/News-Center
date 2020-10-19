@@ -1,18 +1,23 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro  %}
+{% block content %}
 
-        {% import 'macros.html' as macro  %}
-        {% block content %}
-        <h3> Business News</h3>
-        <ul>
-            {{ macro.displayNewsList(business) }}
-        </ul>
-
-        <h4> General News </h4>
-        <ul>
-            {{ macro.displayNewsList(general)}}
-        </ul>
-        <h4>Entertainment News</h4>
-        <ul>
-            {{ macro.displayNewsList(entertainment)}}
-        </ul>
-        {% endblock %}
-
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+{% endblock %}
+<div class="container-fluid">
+    <h3> Business News</h3>
+    <div class="news">
+        {{ macro.displayNewsList(business) }}
+    </div>
+    <h4> General News </h4>
+    <div class="news">
+        {{ macro.displayNewsList(general)}}
+    </div>
+    <h4>Entertainment News</h4>
+    <div class="news">
+        {{ macro.displayNewsList(entertainment)}}
+    </div>
+</div>
+{% endblock %}
