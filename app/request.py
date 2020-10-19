@@ -1,5 +1,5 @@
 import urllib.request,json
-from .models import Sources
+from .models import Sources,Articles
 
 # Getting api key
 api_key = None
@@ -54,7 +54,7 @@ def get_articles(id):
     '''
     Function that gets the json response to our url request
     '''
-    get_articles_url = articles_base_url.format(id, api_key)
+    get_articles_url = article_url.format(id, api_key)
 
     with urllib.request.urlopen(get_articles_url) as url:
         get_articles_data = url.read()
