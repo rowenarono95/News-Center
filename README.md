@@ -26,7 +26,7 @@ The User can:
 * bootstrap
 
 ### CONTACT DETAILS
-Incase of an error you can me through my email <rowenarono@gmail.com>
+Incase of an error you can reach me through my email <rowenarono@gmail.com>
 
 ### LICENSE
 * [[License: MIT]](Licence.md)
