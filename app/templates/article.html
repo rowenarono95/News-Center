@@ -8,6 +8,7 @@
     {% else %}
     <title> News Center </title>
     {% endif %}
+    
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <div class="col-md-3">
                 <div class="card" style="width: 20rem;">
 
-                    <img src="{{article.urlToImage}}" width="400px" class="card-img-top" alt="...">
+                    <img src="{{article.urlToImage}}" width="500px" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{article.publishedAt}}</h5>
                         <p class="card-text">{{article.description|truncate(100)}}.</p>
@@ -31,3 +32,15 @@
 </body>
 
 </html>
+
+<!-- <div class="card-columns">
+        {% for item in myNews %}
+        <div class="card">
+            <p>{{news.url}}">{{ news.name}}</p>
+            <div class="card-body">
+                <p>{{news.description}}</p>
+                <p><br><a href="/sources/{{news.id}}">{{ View Article}}</a></p>
+            </div>
+        </div>
+        {% endfor %}
+    </div> -->
