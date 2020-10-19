@@ -6,10 +6,8 @@
 ### LIVE LINK
 *
 
-
 ## GITHUB LINK
 *
-
 
 ### DESCRIPTION
 This an application that provides users with the most current news around including those of different articles where they can check the news.
