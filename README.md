@@ -7,12 +7,14 @@
 *
 
 ## GITHUB LINK
-*
+* <https://github.com/rowenarono95/News-Center>
 
 ### DESCRIPTION
 This an application that provides users with the most current news around including those of different articles where they can check the news.
 
 ### USER STORIES
+The User can:
+
 * See various news sources and select the ones they prefer to view.
 * View all news sources from the source they selected.
 * See Image description and time the news article was created.
