@@ -1,5 +1,6 @@
 
-        { % import 'macros.html' as macro % }
+        {% import 'macros.html' as macro  %}
+        {% block content %}
         <h3> Business News</h3>
         <ul>
             {{ macro.displayNewsList(business) }}
@@ -11,6 +12,7 @@
         </ul>
         <h4>Entertainment News</h4>
         <ul>
-            {{ macro.displayNewsList(entertainment_list)}}
+            {{ macro.displayNewsList(entertainment)}}
         </ul>
+        {% endblock %}
 
