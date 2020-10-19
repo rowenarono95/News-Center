@@ -7,15 +7,15 @@
 <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
 {% endblock %}
 <div class="container-fluid">
-    <h3> Business News</h3>
+    <h3 text-center> Business News</h3>
     <div class="news">
         {{ macro.displayNewsList(business) }}
     </div>
-    <h3> General News </h3>
+    <h3 text-center> General News </h3>
     <div class="news">
         {{ macro.displayNewsList(general)}}
     </div>
-    <h3>Entertainment News</h3>
+    <h3 text-center>Entertainment News</h3>
     <div class="news">
         {{ macro.displayNewsList(entertainment)}}
     </div>
