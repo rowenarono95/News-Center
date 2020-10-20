@@ -11,13 +11,14 @@ body {
 
 .news {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+
+    
 }
 h3{
     text-align: center;
     color: blue;
-    font-size: large;
+    font-size: 35px;
     font-weight: bolder;
+    margin-bottom: 20px;
 }

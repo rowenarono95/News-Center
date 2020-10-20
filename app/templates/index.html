@@ -6,18 +6,24 @@
 {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
 {% endblock %}
+
 <div class="container-fluid">
-    <h3 text-center> Business News</h3>
-    <div class="news">
-        {{ macro.displayNewsList(business) }}
-    </div>
-    <h3 text-center> General News </h3>
-    <div class="news">
-        {{ macro.displayNewsList(general)}}
-    </div>
-    <h3 text-center>Entertainment News</h3>
-    <div class="news">
-        {{ macro.displayNewsList(entertainment)}}
+    <div class="panel panel-default" style="box-shadow: 5px 10px #888888;">
+        <div class="panel-body">
+            <h3 style="text-align: center;"> Business News</h3>
+            <div class="news">
+                {{ macro.displayNewsList(business) }}
+            </div>
+        </div>
+        <h3> General News </h3>
+        <div class="news">
+            {{ macro.displayNewsList(general)}}
+        </div>
+        <h3>Entertainment News</h3>
+        <div class="news">
+            {{ macro.displayNewsList(entertainment)}}
+        </div>
+
     </div>
 </div>
 {% endblock %}

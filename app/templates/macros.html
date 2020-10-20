@@ -1,11 +1,18 @@
 {% macro displayNewsList(news_list) %}
 
 {% for news in news_list %}
-<div class="card" style="width: 35rem;">
-    <h5 class="card-title h3">{{ news.name}}</h5>
-    <div class="card-body">
-        <p class="card-text">{{ news.description}}.</p>
-        <a href="/article/{{news.id}}" class="btn btn-primary">View Article</a>
+<div style="width: 35rem;">
+
+    <div class="container-fluid">
+        <div class="panel panel-default" style="box-shadow: 0 8px 6px -6px black;">
+            <h5 class="card-title h3" style="margin-left: 20px;">{{ news.name}}</h5>
+            <div class="card-body">
+                <p class="card-text" style="margin-left: 20px; font-size: 18px;" >{{ news.description}}.</p>
+                <a href="/article/{{news.id}}" class="btn btn-primary text-center" style="margin-left: 40px;">View
+                    Article</a>
+                <br><br>
+            </div>
+        </div>
     </div>
 </div>
 {% endfor %}
