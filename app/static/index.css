@@ -18,4 +18,6 @@ body {
 h3{
     text-align: center;
     color: blue;
+    font-size: large;
+    font-weight: bolder;
 }

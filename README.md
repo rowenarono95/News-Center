@@ -4,7 +4,7 @@
 * ROWENA RONO
 
 ### LIVE LINK
-*
+* <https://news24center.herokuapp.com/>
 
 ## GITHUB LINK
 * <https://github.com/rowenarono95/News-Center>
